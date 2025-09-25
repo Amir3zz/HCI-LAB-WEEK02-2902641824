@@ -2,37 +2,87 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Geography Page</title>
 </head>
 
 <body>
-    <a href="index.html">Back</a>
-    <br />
+    <!-- Generic element using div -->
 
-    <h1>Indonesia Geography</h1>
-    <img src="images/img_4.jpg" alt="image 01" width="500px" />
-    <p>
-        The southernmost country in Asia, Indonesia lies between latitudes 11°S and 6°N and longitudes
-        95°E and 141°E. It is also a transcontinental country, spanning Southeast Asia and Oceania and
-        is the world's largest archipelagic state, stretching 5,120 kilometres (3,181 mi) from east to
-        west and 1,760 kilometres (1,094 mi) from north to south. The exact number of Indonesia's
-        islands varies according to different sources, usually ranging from 13,000 to 17,000, with
-        around 922 permanently inhabited. Its five largest islands are Sumatra, Java, Borneo (shared
-        with Brunei and Malaysia), Sulawesi, and New Guinea (shared with Papua New Guinea).
-    </p>
+    <div class="main-bg">
+        <header>
 
-    <img src="images/img_5.jpg" alt="image 02" width="500px" />
-    <p>
-        Indonesia's equatorial position ensures a relatively stable climate year-round, characterised
-        by two main seasons: the dry season from May to October and the wet season from November to
-        April, with no extremes of summer and winter. The climate is predominantly tropical
-        rainforest, with cooler climates in higher areas over 500 metres (1,600 feet) above sea level.
-        In Indonesia's highland regions, the climate is cooler and wetter than in the lowlands. Areas
-        near tropical rainforests tend to receive consistent rainfall year-round (Köppen: Cfb), while
-        those closer to monsoon and savanna regions have more distinct dry seasons (Köppen: Cwb)
-    </p>
+            <!-- Article component -->
+            <h1 class="title">Indonesia Geography</h1>
+            <nav>
+                <a href="index.html">Back</a>
+            </nav>
+        </header>
+        <hr><br>
+        <article>
+            <section>
+                <div class="flexx">
+                    <p>
+                        The southernmost country in Asia, Indonesia lies between latitudes 11°S and 6°N and
+                        longitudes 95°E and 141°E. It is also a transcontinental country, spanning Southeast Asia
+                        and Oceania and is the world's largest archipelagic state, stretching 5,120 kilometres
+                        (3,181 mi) from east to west and 1,760 kilometres (1,094 mi) from north to south. The
+                        exact number of Indonesia's islands varies according to different sources, usually ranging
+                        from 13,000 to 17,000, with around 922 permanently inhabited. Its five largest islands are
+                        Sumatra, Java, Borneo (shared with Brunei and Malaysia), Sulawesi, and New Guinea (shared
+                        with Papua New Guinea).
+                    </p>
+                    <img src="assets/img_4.jpg" alt="image 01" width="500px" />
+                </div>
+
+                <hr>
+                <br>
+
+                <div class="flexx">
+
+                    <p>
+                        Indonesia's equatorial position ensures a relatively stable climate year-round,
+                        characterised by two main seasons: the dry season from May to October and the wet season
+                        from November to April, with no extremes of summer and winter. The climate is
+                        predominantly tropical rainforest, with cooler climates in higher areas over 500 metres
+                        (1,600 feet) above sea level. In Indonesia's highland regions, the climate is cooler and
+                        wetter than in the lowlands. Areas near tropical rainforests tend to receive consistent
+                        rainfall year-round (Köppen: Cfb), while those closer to monsoon and savanna regions have
+                        more distinct dry seasons (Köppen: Cwb)
+                    </p>
+                    <img src="assets/img_5.jpg" alt="image 02" width="500px" />
+                </div>
+            </section>
+        </article>
+
+        <hr>
+
+        <!-- Form Component -->
+        <section>
+            <div style="font-size: 20px;">
+                <h2>Share Your Thoughts</h2>
+                <form action="#" method="post">
+                    <label for="name">Full Name:</label><br />
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required /><br /><br />
+
+                    <label for="email">Email:</label><br />
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required /><br /><br />
+
+                    <label for="fname">Are you Satisfied with the Website?</label><br>
+                    <input type="radio" id="fname" name="fname">Yes <input type="radio" name="fname" id="fname">No
+                    <br><br>
+
+                    <label for="feedback">Your Feedback:</label><br />
+                    <textarea id="feedback" name="feedback" rows="5" cols="40"
+                        placeholder="Write your feedback here..."></textarea><br /><br />
+
+                    <button class="fSubmit" type="submit">Submit</button>
+            </div>
+            </form>
+        </section>
+    </div>
 </body>
 
 </html>
